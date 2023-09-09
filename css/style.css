@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Vazir-Medium;
+  src: url("../fonts/Vazir-Medium.eot") format("eot"),
+    url("../fonts/Vazir-Medium.woff") format("woff"),
+    url("../fonts/Vazir-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: Vazir-Medium;
+}
+#sidebar a,
+#sidebar i {
+  color: white;
+}
+
+#sidebar .nav-link {
+  font-size: 15px;
+  font-weight: 300px;
+}
+
+#sidebar {
+  height: calc(100vh - 56px);
+  transition: all 0.3s;
+  z-index: 1000;
+}
+
+#sidebar .float-right {
+  font-size: 24px;
+}
+
+/* #sidebar .nav-link .float-right{
+    transform: rotate(-90deg);
+}
+
+#sidebar .nav-link.collapse .float-right{
+    transform: rotate(0deg);
+}  */
+
+#sidebar.collapse {
+  transform: translate(0, 0);
+}
+
+#sidebar.collapsing {
+  transform: translate(100%, 0);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+tr {
+  text-align: center;
+}
