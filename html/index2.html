@@ -23,6 +23,7 @@
       integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
       crossorigin="anonymous"
     />
+    
   </head>
 </head>
 <body class="bg-light">
@@ -55,7 +56,7 @@
   <!-- ------------------------------------------------------- sidebar start ----------------------------------------------- -->
   <div class="container-fluid">
     <div class="row">
-      <div id="sidebar" class="col-5 col-sm-4 col-md-2 bg-dark collapse position-fixed">
+      <div id="sidebar" class="col-md-2 bg-dark collapse position-fixed">
         <ul class="nav d-flex flex-column">
           <li class="nav-item my-1">
               <a href="#submenu1" class="nav-link" data-toggle="collapse">
@@ -118,10 +119,20 @@
   <!-- ------------------------------------------------ sidebar end ------------------------------------------ -->
   <!-- -------------------------------------- table start --------------------------------------------- -->
   <div class="px-4 mr-auto">
-      <div class="card text-left text-dark bg-white my-4 border-2 shadow">
+      <div class="card text-left text-dark bg-white mt-3 border-0">
       <div class="card-body">
         <h5 class="card-title">لیست کاربران</h5>
       </div>
+  <div class="shop_sidebar_search">
+    <form action="#">
+                                <input type="text" placeholder="جستجو ...">
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </button>
+                            </form>
+                        </div>
     </div>
     <div class="table-responsive">
       <table class="table table-bordered">
@@ -130,6 +141,7 @@
             <th scope="col">نام کاربر </th>
             <th scope="col">ایمیل </th>
             <th scope="col">شماره تماس</th>
+            <th scope="col">وضعیت</th>
           </tr>
         </thead>
         <tbody>
@@ -137,61 +149,109 @@
             <td scope="row">فرشته عبدی</td>
             <td>fereshte@gmail.com</td>
             <td>09102654585</td>
+            <td>
+              <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn-danger shadow mx-3">
+                <span class="material-icons">delete</span></button>
+            </td>
+                    <div class="modal fade" id="edit-icon">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title fs-5">ویرایش کاربر</h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>             
           </tr>
+                          
           <tr>
             <td scope="row">الناز زنگنه مقدم</td>
             <td>eli@gmail.com</td>
             <td>09159871562</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">فایزه شریعت</td>
             <td>faeze@gmail.com</td>
             <td>09366541235</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
             <tr>
             <td scope="row">هنگامه سعادت</td>
             <td>hengameh@gmail.com</td>
             <td>09902365147</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">علی احمدی</td>
             <td>ali@gmail.com</td>
             <td>09015479652</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">بنیامین صالحی</td>
             <td>benyamin@gmail.com</td>
             <td>09361235478</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">فرزاد حسنی</td>
             <td>farzad@gmail.com</td>
             <td>09158956214</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">میترا زارعی</td>
             <td>mitra@gmail.com</td>
             <td>09136841236</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">آنیل احمدی</td>
             <td>anil@gmail.com</td>
             <td>09124569878</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">فرشید قیاسی</td>
             <td>farshid@gmail.com</td>
             <td>09196548212</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
           <tr>
             <td scope="row">احسان کریمی</td>
             <td>ehsan@gmail.com</td>
             <td>09374152363</td>
+            <td><span class="btn btn-success shadow mx-3">ویرایش</span><span class="btn btn-danger shadow mx-3">حذف</span></td>
           </tr>
         </tbody>
       </table>
+      
     </div>
   </div>
+
 
 <!-- ------------------------------------------------ table end ----------------------------------------------- -->
 
@@ -212,6 +272,7 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+
     <script src="../js/script.js"></script>
 </body>
 </html>
