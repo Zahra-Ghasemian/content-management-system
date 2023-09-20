@@ -24,7 +24,6 @@
       integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body class="bg-light">
@@ -55,22 +54,24 @@
       >
         <nav class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="../html/index.html" class="nav-link">
               <i class="fa fa-tachometer" aria-hidden="true"></i>
               پیشخوان</a
             >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-users mr-1" aria-hidden="true"></i>کاربران</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-cog mr-1" aria-hidden="true"></i>تنظیمات
+          <li class="nav-item dropdown">
+            <a href="../html/index2.html" class="nav-link" data-toggle="dropdown">
+              <span class="material-icons">person</span>
+              <div class="dropdown-menu text-left">
+                <div class="dropdown-header text-secondary">حساب کاربری</div>
+                <hr>
+                <a href="#" class="dropdown-item text-secondary">zahra ghasemian</a>
+                <a href="#" class="dropdown-item text-danger">خروج</a>
+              </div>
             </a>
           </li>
         </nav>
+
       </div>
     </nav>
     <!-- -------------------------------- navbar end ------------------------------------------- -->
@@ -86,7 +87,7 @@
                 <i class="material-icons float-right">expand_more</i>
               </a>
               <div class="collapse bg-secondary rounded" id="submenu1">
-                <ul class="nav pr-0">
+                <ul class="nav pr-0 d-flex flex-column">
                   <li class="nav-item">
                     <a href="../html/index2.html" class="nav-link"
                       >مشاهده کاربران</a
@@ -104,14 +105,14 @@
                 <i class="material-icons float-right">expand_more</i>
               </a>
               <div class="collapse bg-secondary rounded" id="submenu2">
-                <ul class="nav pr-0">
+                <ul class="nav pr-0 d-flex flex-column">
                   <li class="nav-item">
                     <a href="#submenu3" class="nav-link" data-toggle="collapse"
                       >دسته بندی
                       <i class="material-icons float-right ml-5">expand_more</i>
                     </a>
                     <div class="collapse bg-secondary rounded" id="submenu3">
-                      <ul class="nav pr-0">
+                      <ul class="nav pr-0 d-flex flex-column">
                         <li class="nav-item">
                           <a href="../html/index3.html" class="nav-link"
                             >لپ تاپ و کامپیوتر</a
@@ -170,9 +171,9 @@
             <i class="material-icons ml-2 h4 float-right">bar_chart</i>
             <h5 class="card-title">53000</h5>
             <p class="card-text">تعداد بازدید روزانه</p>
-            <div>
-              <canvas id="Chart1" class="w-100%" height="100px"></canvas>
-            </div>
+              <div>
+                <canvas id="myChart1" class="w-100" height="100"></canvas>
+              </div>
           </div>
         </div>
         <div class="card text-left text-white bg-primary mb-3 border-0 shadow">
@@ -180,6 +181,9 @@
             <i class="material-icons ml-2 h4 float-right">groups</i>
             <h5 class="card-title">25000</h5>
             <p class="card-text">تعداد کاربران جدید</p>
+              <div>
+                <canvas id="myChart2" class="w-100" height="100"></canvas>
+              </div>
           </div>
         </div>
         <div class="card text-left text-white bg-danger mb-3 border-0 shadow">
@@ -187,6 +191,9 @@
             <i class="material-icons ml-2 h4 float-right">incomplete_circle</i>
             <h5 class="card-title">15000</h5>
             <p class="card-text">تعداد فروش روزانه</p>
+              <div>
+                <canvas id="myChart3" class="w-100" height="100"></canvas>
+              </div>
           </div>
         </div>
         <div class="card text-left text-white bg-success mb-3 border-0 shadow">
@@ -194,6 +201,9 @@
             <i class="material-icons ml-2 h4 float-right">data_exploration</i>
             <h5 class="card-title">850</h5>
             <p class="card-text">تعداد محصولات جدید</p>
+              <div>
+                <canvas id="myChart4" class="w-100" height="100"></canvas>
+              </div>
           </div>
         </div>
       </div>
@@ -206,28 +216,10 @@
         <div class="card-body">
           <div class="d-flex justify-content-between align-items-center">
             <h5 class="card-title">آمار بازدید سایت</h5>
-
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-outline-secondary active">
-                <input type="radio" name="options" id="option1" checked /> روز
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option2" /> ماه
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option3" /> سال
-              </label>
-            </div>
-            <button
-              type="button"
-              class="btn btn-info"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="گرفتن خروجی"
-            >
-              <i class="material-icons ml-2 h4 float-right">exit_to_app</i>
-            </button>
           </div>
+              <div>
+                <canvas id="visit" class="w-100" height="300"></canvas>
+              </div>
         </div>
         <div class="card-footer">
           <div class="row text-center">
@@ -345,6 +337,8 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="../js/chart.min.js"></script>
 
     <script src="../js/script.js"></script>

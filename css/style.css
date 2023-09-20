@@ -63,17 +63,39 @@ tr {
     border: none;
     background: transparent;
     position: absolute;
-    padding: 122px 955px;
+    /* padding: 122px 955px; */
     top: -21px;
     left: 15px;
+    display: contents;
 }
 
 .shop_sidebar_search form input{
     width: 500px;
     font-size: 15px;
     color: #b7b7b7;
-    padding: 15px;
-    margin: 15px;
-    border: 1px solid #201f1f;
-    height: 42px;
+    /* padding: 15px; */
+    /* margin: 15px; */
+    border: none;
+    outline: none;
+   /* height: 42px; */
+}
+
+.search{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #201f1f;
+  width: fit-content;
+  height: 38px;
+  padding: 4px;
+}
+
+.add-icon{
+  vertical-align: bottom;
+}
+
+.buttom-add{
+  position: absolute; 
+  top: 0; 
+  left: 100px;
 }
