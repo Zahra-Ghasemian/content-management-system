@@ -122,11 +122,65 @@
   <!-- -------------------------------------- sidebare end --------------------------------------------- -->
   <!-- ------------------------------------------- table start ---------------------------------------------- -->
   <div class="px-4 mr-auto">
-      <div class="card text-left text-dark bg-white my-4 border-2 shadow">
+      <div class="card text-left text-dark bg-white mt-3 border-0">
       <div class="card-body">
         <h5 class="card-title">لیست کامپیوتر و لپ تاپ</h5>
       </div>
     </div>
+  <!-- ---------------------------------------------------------- search ----------------------------------------------- -->
+      <div class="pb-3" style="position: relative;">  
+        <div class="shop_sidebar_search">
+    <form action="#">
+      <div class="search">
+        <input type="text" placeholder="جستجو ...">
+          <button type="submit">
+            <span class="material-icons">
+              search
+            </span>
+          </button>        
+      </div>
+    </form>
+</div>
+    <button class="buttom-add btn btn-primary shadow mx-3" data-toggle="modal" data-target="#buttom-add" data-whatever="@mdo">
+      <span class="material-icons add-icon">add</span>افزودن محصول
+    </button> 
+            <div class="modal fade" id="buttom-add">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">افزودن محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>    
+</div>
     <div class="table-responsive">
       <table class="table table-bordered">
         <thead class="thead-light">
@@ -135,6 +189,7 @@
             <th scope="col">عنوان</th>
             <th scope="col">قیمت </th>
             <th scope="col">تعداد موجودی</th>
+            <th scope="col">وضعیت</th>
           </tr>
         </thead>
         <tbody>
@@ -143,31 +198,436 @@
             <td scope="row">لپ تاپ لنوو 15.6 اینچی IdeaPad 3 i3 1115G4-12GB-1TB HDD+256GB SSD</td>
             <td>۱۵۹۰۰۰۰۰ تومان</td>
             <td>25</td>
+            <td>
+              <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn-danger shadow mx-3">
+                <span class="material-icons">delete</span>
+              </button>
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+                <span class="material-icons">visibility</span>
+              </button>
+            </td>            
           </tr>
+            <div class="modal fade" id="view-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top1.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ لنوو 15.6 اینچی IdeaPad 3 i3 1115G4-12GB-1TB HDD+256GB SSD</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۵۹۰۰۰۰۰ تومان</span>
+                  </div>                                                             
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
           <tr>
             <td><img src="../images/laptop/img-lap top2.jpg" alt="لپ تاپ 15.6 اینچی ایسوس مدل VivoBook X515EP-BQ222 I5 8G 512G"></td>
             <td scope="row">لپ تاپ 15.6 اینچی ایسوس مدل VivoBook X515EP-BQ222 I5 8G 512G</td>
             <td>۲۴۹۰۰۰۰۰ تومان</td>
             <td>5</td>
+            <td>
+              <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn-danger shadow mx-3">
+                <span class="material-icons">delete</span>
+              </button>
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view2-icon" data-whatever="@mdo">
+                <span class="material-icons">visibility</span>
+              </button>
+            </td>
           </tr>
+            <div class="modal fade" id="view2-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top2.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 15.6 اینچی ایسوس مدل VivoBook X515EP-BQ222 I5 8G 512G</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۲۴۹۰۰۰۰۰ تومان</span>
+                  </div>                                                             
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
           <tr>
             <td><img src="../images/laptop/img-lap top3.jpg" alt="لپ تاپ 15.6 اینچی ایسوس مدل X515EP-EJ650-i7 16GB 1HDD 512SSD MX330 - کاستوم شده"></td>
             <td scope="row">لپ تاپ 15.6 اینچی ایسوس مدل X515EP-EJ650-i7 16GB 1HDD 512SSD MX330 - کاستوم شده</td>
             <td>۳۲۵۴۰۰۰۰ تومان</td>
             <td>10</td>
+            <td>
+              <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn-danger shadow mx-3">
+                <span class="material-icons">delete</span>
+              </button>
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view3-icon" data-whatever="@mdo">
+                <span class="material-icons">visibility</span>
+              </button>
+            </td>
           </tr>
+            <div class="modal fade" id="view3-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top3.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 15.6 اینچی ایسوس مدل X515EP-EJ650-i7 16GB 1HDD 512SSD MX330 - کاستوم شده</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۳۲۵۴۰۰۰۰ تومان</span>
+                  </div>                                                             
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
           <tr>
             <td><img src="../images/laptop/img-lap top4.jpg" alt="لپ تاپ 16 اینچی ایسوس مدل Vivobook 16 R1605ZA-MB119"></td>
             <td scope="row">لپ تاپ 16 اینچی ایسوس مدل Vivobook 16 R1605ZA-MB119</td>
             <td>۳۲۵۸۹۰۰۰ تومان</td>
             <td>7</td>
+            <td>
+              <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn-danger shadow mx-3">
+                <span class="material-icons">delete</span>
+              </button>
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view4-icon" data-whatever="@mdo">
+                <span class="material-icons">visibility</span>
+              </button>
+            </td>
           </tr>
+            <div class="modal fade" id="view4-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top4.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 16 اینچی ایسوس مدل Vivobook 16 R1605ZA-MB119</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۳۲۵۴۰۰۰۰ تومان</span>
+                  </div>                                                             
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
           <tr>
             <td><img src="../images/laptop/img-lap top5.jpg" alt="لپ تاپ 13.6 اینچی اپل مدل MacBook Air-B M2 2022"></td>
             <td scope="row">لپ تاپ 13.6 اینچی اپل مدل MacBook Air-B M2 2022</td>
             <td>۵۵۳۰۰۰۰۰ تومان</td>
             <td>15</td>
+            <td>
+              <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn-danger shadow mx-3">
+                <span class="material-icons">delete</span>
+              </button>
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view5-icon" data-whatever="@mdo">
+                <span class="material-icons">visibility</span>
+              </button>
+            </td>
           </tr>
+            <div class="modal fade" id="view5-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top5.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 13.6 اینچی اپل مدل MacBook Air-B M2 2022</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۵۵۳۰۰۰۰۰ تومان</span>
+                  </div>                                                             
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
         </tbody>
       </table>
     </div>

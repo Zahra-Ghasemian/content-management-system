@@ -35,7 +35,7 @@
 
 /* #sidebar .nav-link .float-right{
     transform: rotate(-90deg);
-}
+} 
 
 #sidebar .nav-link.collapse .float-right{
     transform: rotate(0deg);
@@ -52,6 +52,10 @@
 img {
   width: 100px;
   height: 100px;
+}
+.img-full{
+    width: 300px;
+  height: 300px;
 }
 tr {
   text-align: center;
