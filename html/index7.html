@@ -191,20 +191,21 @@
       <table class="table table-bordered">
         <thead class="thead-light">
           <tr>
-            <th>تصویر</th>
+            <th scope="col">تصویر</th>
             <th scope="col">عنوان</th>
-            <th scope="col">دسته</th>
-            <th scope="col">قیمت</th>
+            <th scope="col">قیمت </th>
+            <th>دسته</th>
             <th scope="col">تعداد موجودی</th>
             <th scope="col">وضعیت</th>
           </tr>
         </thead>
         <tbody>
+          <!-- ------------------------------------- 1-1 ------------------------------------ -->
           <tr>
-            <td><img src="../images/laptop/img-lap top1.jpg" alt="لپ تاپ لنوو 15.6 اینچی IdeaPad 3 i3 1115G4-12GB-1TB HDD+256GB SSD"></td>
-            <td scope="row">لپ تاپ لنوو 15.6 اینچی IdeaPad 3 i3 1115G4-12GB-1TB HDD+256GB SSD</td>
-            <td>کامپیوتر و لپ تاپ</td>
-            <td>۱۵۹۰۰۰۰۰ تومان</td>
+            <td><img src="../images/laptop/img-lap top1.jpg" alt=""></td>
+            <td scope="row">لپ تاپ 15.6 اینچی ایسوس مدل VivoBook 15 R1502ZA-EJ957</td>
+            <td>۱۶۲۸۹۰۰۰ تومان</td>
+            <td>لپ تاپ</td>
             <td>25</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -213,16 +214,106 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon1" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
-            </td>
+            </td>            
           </tr>
+            <div class="modal fade" id="view-icon1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top1.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 15.6 اینچی ایسوس مدل VivoBook 15 R1502ZA-EJ957</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۶۲۸۹۰۰۰ تومان</span>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: نقره ای</label>
+                    <div class="product-color" style="background-color: #b3b3b3;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>سری پردازنده: Core i3</span>
+                    <br>
+                    <span>ظرفیت حافظه RAM: هشت گیگابایت</span>
+                    <br>
+                    <span>ظرفیت حافظه داخلی: 256 گیگابایت</span>
+                    <br>
+                    <span>سازنده پردازنده گرافیکی: Intel</span>
+                    <br>
+                    <span>دقت صفحه نمایش: 1080 × 1920 پیکسل - Full HD</span>
+                    <br>
+                    <span>طبقه‌بندی: کاربری مالتی‌مدیا، کاربری عمومی</span>
+                  </div>                                                         
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ---------------------------------- 1-2 ----------------------------------------------- -->
           <tr>
-            <td><img src="../images/laptop/img-lap top2.jpg" alt="لپ تاپ 15.6 اینچی ایسوس مدل VivoBook X515EP-BQ222 I5 8G 512G"></td>
-            <td scope="row">لپ تاپ 15.6 اینچی ایسوس مدل VivoBook X515EP-BQ222 I5 8G 512G</td>
-            <td>کامپیوتر و لپ تاپ</td>
-            <td>۲۴۹۰۰۰۰۰ تومان</td>
+            <td><img src="../images/laptop/img-lap top2.jpg" alt=""></td>
+            <td scope="row">لپ تاپ 15.6 اینچی اچ‌ پی مدل 15s-FQ5000-i3 8GB 512SSD</td>
+            <td>۱۴۳۹۰۰۰۰ تومان</td>
+            <td>لپ تاپ</td>
             <td>5</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -231,16 +322,106 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view2-icon" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view2-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top2.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 15.6 اینچی اچ‌ پی مدل 15s-FQ5000-i3 8GB 512SSD</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۴۳۹۰۰۰۰ تومان</span>
+                  </div>      
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #191919;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>سری پردازنده: Core i3</span>
+                    <br>
+                    <span>ظرفیت حافظه RAM: هشت گیگابایت</span>
+                    <br>
+                    <span>ظرفیت حافظه داخلی: 512 گیگابایت</span>
+                    <br>
+                    <span>سازنده پردازنده گرافیکی: Intel</span>
+                    <br>
+                    <span>دقت صفحه نمایش: HD|1366x768</span>
+                    <br>
+                    <span>طبقه‌بندی: کاربری عمومی</span>
+                  </div>                                                     
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ---------------------------------------- 1-3 ---------------------------------- -->
           <tr>
-            <td><img src="../images/laptop/img-lap top3.jpg" alt="لپ تاپ 15.6 اینچی ایسوس مدل X515EP-EJ650-i7 16GB 1HDD 512SSD MX330 - کاستوم شده"></td>
-            <td scope="row">لپ تاپ 15.6 اینچی ایسوس مدل X515EP-EJ650-i7 16GB 1HDD 512SSD MX330 - کاستوم شده</td>
-            <td>کامپیوتر و لپ تاپ</td>
-            <td>۳۲۵۴۰۰۰۰ تومان</td>
+            <td><img src="../images/laptop/img-lap top3.jpg" alt=""></td>
+            <td scope="row">لپ تاپ 15.3 اینچی اپل مدل MacBook Air MQKX3 M2 2023</td>
+            <td>۷۴۸۵۰۰۰۰ تومان</td>
+            <td>لپ تاپ</td>
             <td>10</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -249,16 +430,104 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view3-icon" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view3-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top3.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 15.3 اینچی اپل مدل MacBook Air MQKX3 M2 2023</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۷۴۸۵۰۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: سرمه ای</label>
+                    <div class="product-color" style="background-color: #10024e;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>سری پردازنده: M2</span>
+                    <br>
+                    <span>ظرفیت حافظه RAM: هشت گیگابایت</span>
+                    <br>
+                    <span>ظرفیت حافظه داخلی: 512 گیگابایت</span>
+                    <br>
+                    <span>سازنده پردازنده گرافیکی: Apple</span>
+                    <br>
+                    <span>دقت صفحه نمایش: 2880x1864</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- -------------------------------------- 1-4 -------------------------------------------- -->
           <tr>
-            <td><img src="../images/laptop/img-lap top4.jpg" alt="لپ تاپ 16 اینچی ایسوس مدل Vivobook 16 R1605ZA-MB119"></td>
-            <td scope="row">لپ تاپ 16 اینچی ایسوس مدل Vivobook 16 R1605ZA-MB119</td>
-            <td>کامپیوتر و لپ تاپ</td>
-            <td>۳۲۵۸۹۰۰۰ تومان</td>
+            <td><img src="../images/laptop/img-lap top4.jpg" alt=""></td>
+            <td scope="row">لپ تاپ 16 اینچی اچ‌ پی مدل ENVY 16 H1023-i9 32GB 2SSD RTX4060</td>
+            <td>۱۰۴۹۹۰۰۰۰ تومان</td>
+            <td>لپ تاپ</td>
             <td>7</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -267,16 +536,106 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view4-icon" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view4-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top4.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 16 اینچی اچ‌ پی مدل ENVY 16 H1023-i9 32GB 2SSD RTX4060</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۰۴۹۹۰۰۰۰ تومان</span>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: خاکستری</label>
+                    <div class="product-color" style="background-color: #79797b;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>سری پردازنده: Core i9</span>
+                    <br>
+                    <span>ظرفیت حافظه RAM: 32 گیگابایت</span>
+                    <br>
+                    <span>ظرفیت حافظه داخلی: دو ترابایت</span>
+                    <br>
+                    <span>سازنده پردازنده گرافیکی: NVIDIA</span>
+                    <br>
+                    <span>دقت صفحه نمایش: QHD|2560x1600</span>
+                    <br>
+                    <span>طبقه‌بندی: کاربری مالتی‌مدیا، مخصوص طراحی</span>
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- --------------------------------- 1-5 -------------------------------------- -->
           <tr>
-            <td><img src="../images/laptop/img-lap top5.jpg" alt="لپ تاپ 13.6 اینچی اپل مدل MacBook Air-B M2 2022"></td>
-            <td scope="row">لپ تاپ 13.6 اینچی اپل مدل MacBook Air-B M2 2022</td>
-            <td>کامپیوتر و لپ تاپ</td>            
-            <td>۵۵۳۰۰۰۰۰ تومان</td>
+            <td><img src="../images/laptop/img-lap top5.jpg" alt=""></td>
+            <td scope="row">لپ تاپ 15.6 اینچی لنوو مدل IdeaPad 3 15ITL6-i5 12GB 1HDD 512SSD MX350 - کاستوم شده</td>
+            <td>۲۷۸۷۰۰۰۰ تومان</td>
+            <td>لپ تاپ</td>
             <td>15</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -285,16 +644,106 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view5-icon" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view5-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/laptop/img-lap top5.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>لپ تاپ 15.6 اینچی لنوو مدل IdeaPad 3 15ITL6-i5 12GB 1HDD 512SSD MX350 - کاستوم شده</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۲۷۸۷۰۰۰۰ تومان</span>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: خاکستری</label>
+                    <div class="product-color" style="background-color: #79797b;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>سری پردازنده: Core i5</span>
+                    <br>
+                    <span>ظرفیت حافظه RAM: 12 گیگابایت</span>
+                    <br>
+                    <span>ظرفیت حافظه داخلی: یک ترابایت و 512 گیگابایت</span>
+                    <br>
+                    <span>سازنده پردازنده گرافیکی: NVIDIA</span>
+                    <br>
+                    <span>دقت صفحه نمایش: 1080 × 1920 پیکسل - Full HD</span>
+                    <br>
+                    <span>طبقه‌بندی: کاربری مالتی‌مدیا، کاربری عمومی</span>
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- --------------------------------- 2-1 ---------------------------------- -->
           <tr>
-            <td><img src="../images/mobile/img-mobil1.jpg" alt="گوشی موبایل شیائومی Redmi Note 12 4G (23021RAAEG) ظرفیت 128 گیگابایت رم 8 گیگابایت"></td>
-            <td scope="row">گوشی موبایل شیائومی Redmi Note 12 4G (23021RAAEG) ظرفیت 128 گیگابایت رم 8 گیگابایت</td>
-            <td>تبلت و موبایل</td>
-            <td>۷۶۱۰۰۰۰ تومان</td>
+            <td><img src="../images/mobile/img-mobile1.jpg" alt=""></td>
+            <td scope="row">گوشی موبایل سامسونگ مدل Galaxy A54 5G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت </td>
+            <td>۱۵۸۹۰۰۰۰ تومان</td>
+            <td>موبايل</td>
             <td>45</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -303,16 +752,104 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon1" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/mobile/img-mobil1.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>گوشی موبایل سامسونگ مدل Galaxy A54 5G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۵۸۹۰۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: زرد لیمویی</label>
+                    <div class="product-color" style="background-color: #e9ee4f;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>فناوری صفحه‌نمایش: Super AMOLED</span>
+                    <br>
+                    <span>اندازه: 6.4</span>
+                    <br>
+                    <span>رزولوشن عکس: 50 مگاپیکسل</span>
+                    <br>
+                    <span>نسخه سیستم عامل: Android 13</span>
+                    <br>
+                    <span>اقلام همراه: دفترچه‌ راهنما</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+                    <!-- ------------------------------------- 2-2 ---------------------------- -->
           <tr>
-            <td><img src="../images/mobile/img-mobile2.jpg" alt="گوشی موبايل سامسونگ مدل Galaxy A03 Core ظرفیت 32 گیگابایت - رم 2 گیگابایت"></td>
-            <td scope="row">گوشی موبايل سامسونگ مدل Galaxy A03 Core ظرفیت 32 گیگابایت - رم 2 گیگابایت</td>
-            <td>تبلت و موبایل</td>
-            <td>۳۵۹۹۰۰۰ تومان</td>
+            <td><img src="../images/mobile/img-mobile2.jpg" alt=""></td>
+            <td scope="row">گوشی موبایل سامسونگ مدل Galaxy A24 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت</td>
+            <td>۷۴۴۵۰۰۰ تومان</td>
+            <td>موبايل</td>
             <td>15</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -321,16 +858,104 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon2" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
-          </tr>          
+          </tr>
+            <div class="modal fade" id="view-icon2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/mobile/img-mobile2.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>گوشی موبایل سامسونگ مدل Galaxy A24 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۷۴۴۵۰۰۰ تومان</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #0d0d0d;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>فناوری صفحه‌نمایش: Super AMOLED</span>
+                    <br>
+                    <span>اندازه: 6.4</span>
+                    <br>
+                    <span>رزولوشن عکس: 50 مگاپیکسل</span>
+                    <br>
+                    <span>نسخه سیستم عامل: Android 13</span>
+                    <br>
+                    <span>اقلام همراه: دفترچه‌ راهنما</span>
+                  </div>                                                              
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ------------------------------------ 2-3 ------------------------------------- -->
           <tr>
-            <td><img src="../images/mobile/img-mobile3.jpg" alt="گوشی موبایل شیائومی مدل Redmi Note 12 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت"></td>
-            <td scope="row">گوشی موبایل شیائومی مدل Redmi Note 12 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت</td>
-            <td>تبلت و موبایل</td>            
-            <td>۷۵۷۹۰۰۰ تومان</td>
+            <td><img src="../images/mobile/img-mobile3.jpg" alt=""></td>
+            <td scope="row">گوشی موبایل سامسونگ مدل Galaxy S23 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت</td>
+            <td>۴۹۲۹۹۰۰۰ تومان</td>
+            <td>موبايل</td>
             <td>10</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -339,16 +964,104 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon3" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/mobile/img-mobile3.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>گوشی موبایل سامسونگ مدل Galaxy S23 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۴۹۲۹۹۰۰۰ تومان</span>
+                  </div>  
+              <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #0d0d0d;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>فناوری صفحه‌نمایش: Dynamic AMOLED 2X</span>
+                    <br>
+                    <span>اندازه: 6.8</span>
+                    <br>
+                    <span>رزولوشن عکس: 200 مگاپیکسل</span>
+                    <br>
+                    <span>نسخه سیستم عامل: Android 13</span>
+                    <br>
+                    <span>اقلام همراه: دفترچه‌ راهنما</span>
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ------------------------------------- 2-4 ------------------------------- -->
           <tr>
-            <td><img src="../images/mobile/img-mobile4.jpg" alt="گوشی موبایل اپل مدل iPhone 13 Pro تک سیم کارت ظرفیت یک ترابایت و رم 6 گیگابایت"></td>
-            <td scope="row">گوشی موبایل اپل مدل iPhone 13 Pro تک سیم کارت ظرفیت یک ترابایت و رم 6 گیگابایت</td>
-            <td>تبلت و موبایل</td>            
-            <td>۷۵۶۰۰۰۰۰ تومان</td>
+            <td><img src="../images/mobile/img-mobile4.jpg" alt=""></td>
+            <td scope="row">گوشی موبایل سامسونگ مدل Galaxy M32 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت</td>
+            <td>۸۳۹۹۰۰۰ تومان</td>
+            <td>موبايل</td>
             <td>12</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -357,16 +1070,104 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon4" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
-            </td>
+            </td>            
           </tr>
+            <div class="modal fade" id="view-icon4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/mobile/img-mobile4.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>گوشی موبایل سامسونگ مدل Galaxy M32 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۸۳۹۹۰۰۰ تومان</span>
+                  </div>    
+              <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: آبی</label>
+                    <div class="product-color" style="background-color: #1d16e8;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>فناوری صفحه‌نمایش: Super AMOLED</span>
+                    <br>
+                    <span>اندازه: 6.4</span>
+                    <br>
+                    <span>رزولوشن عکس: 64 مگاپیکسل</span>
+                    <br>
+                    <span>نسخه سیستم عامل: Android 11</span>
+                    <br>
+                    <span>اقلام همراه: شارژر </span>
+                  </div>                                                         
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ---------------------------------------- 2-5 --------------------------------- -->
           <tr>
-            <td><img src="../images/mobile/img-mobile5.jpg" alt="گوشی موبایل سامسونگ مدل Galaxy S21 FE 5G دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت به همراه شارژر سامسونگ"></td>
-            <td scope="row">گوشی موبایل سامسونگ مدل Galaxy S21 FE 5G دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت به همراه شارژر سامسونگ</td>
-            <td>تبلت و موبایل</td>            
-            <td>۱۸۴۰۰۰۰۰ تومان</td>
+            <td><img src="../images/mobile/img-mobile5.jpg" alt=""></td>
+            <td scope="row">گوشی موبایل سامسونگ مدل Galaxy Z Flip5 تک سیم کارت ظرفیت 512 گیگابایت و رم 8 گیگابایت</td>
+            <td>۴۸۲۹۹۰۰۰ تومان</td>
+            <td>موبايل</td>
             <td>4</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -375,16 +1176,104 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon5" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
-            </td>
+            </td>            
           </tr>
+            <div class="modal fade" id="view-icon5">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/mobile/img-mobile5.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>گوشی موبایل سامسونگ مدل Galaxy Z Flip5 تک سیم کارت ظرفیت 512 گیگابایت و رم 8 گیگابایت</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۴۸۲۹۹۰۰۰ تومان</span>
+                  </div> 
+              <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #131314;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>فناوری صفحه‌نمایش: Foldable Dynamic AMOLED 2X</span>
+                    <br>
+                    <span>اندازه: 6.7</span>
+                    <br>
+                    <span>رزولوشن عکس: 12 مگاپیکسل</span>
+                    <br>
+                    <span>نسخه سیستم عامل: Android 13</span>
+                    <br>
+                    <span>اقلام همراه: دفترچه‌ راهنما </span>
+                  </div>                                                             
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+        <!-- ------------------------------------------------- 3-1 -------------------------------------- -->
           <tr>
-            <td><img src="../images/headphone/img-headphone1.jpg" alt="هندزفری بی سیم کیو سی وای مدل T13"></td>
-            <td scope="row">هندزفری بی سیم کیو سی وای مدل T13</td>
-            <td>هدفون و هندزفری</td>
-            <td>۵۸۵۰۰۰ تومان</td>
+            <td><img src="../images/headphone/img-headphone1.jpg" alt=""></td>
+            <td scope="row">هدفون بلوتوثی کیو سی وای مدل T13 TWS</td>
+            <td>۵۹۹۰۰۰ تومان</td>
+            <td>هدفون</td>
             <td>30</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -393,16 +1282,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon1" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/headphone/img-headphone1.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>هدفون بلوتوثی کیو سی وای مدل T13 TWS</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۵۹۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: سفید</label>
+                    <div class="product-color" style="background-color: #ffffff;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع گوشی: دو گوشی</span>
+                    <br>
+                    <span>رابط‌ها: Bluetooth</span>
+                    <br>
+                    <span>قابلیت‌های مقاومتی: مقاومت در برابر رطوبت و عرق</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ------------------------------------- 3-2 ------------------------------------- -->
           <tr>
-            <td><img src="../images/headphone/img-headphone2.jpg" alt="هندزفری اصلی سامسونگ مدل ANC Type-C Earphone AKG"></td>
-            <td scope="row">هندزفری اصلی سامسونگ مدل ANC Type-C Earphone AKG</td>
-            <td>هدفون و هندزفری</td>
-            <td>۵۰۰۰۰۰ تومان</td>
+            <td><img src="../images/headphone/img-headphone2.jpg" alt=""></td>
+            <td scope="row">هندزفری بلوتوثی ساندپیتز مدل MAC</td>
+            <td>۱۹۷۵۰۰۰ تومان</td>
+            <td>هدفون</td>
             <td>50</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -411,16 +1384,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon2" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
-                    <tr>
-            <td><img src="../images/headphone/img-headphone3.jpg" alt="هدفون بلوتوثی اپل مدل AirPods Pro 2nd Generation"></td>
-            <td scope="row">هدفون بلوتوثی اپل مدل AirPods Pro 2nd Generation</td>
-            <td>هدفون و هندزفری</td>            
-            <td>۱۰۴۶۹۰۰۰ تومان</td>
+            <div class="modal fade" id="view-icon2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/headphone/img-headphone2.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>هندزفری بلوتوثی ساندپیتز مدل MAC</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۹۷۵۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #151515;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع گوشی: دو گوشی</span>
+                    <br>
+                    <span>رابط‌ها: USB Type-C</span>
+                    <br>
+                    <span>قابلیت‌های مقاومتی: مقاوم در برابر آب</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ------------------------------------- 3-3 -------------------------------- -->
+          <tr>
+            <td><img src="../images/headphone/img-headphone3.jpg" alt=""></td>
+            <td scope="row">هدفون بی سیم اکسیژن مدل W5</td>
+            <td>۸۹۹۰۰۰ تومان</td>
+            <td>هدفون</td>
             <td>10</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -429,16 +1486,98 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon3" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/headphone/img-headphone3.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>هدفون بی سیم اکسیژن مدل W5</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۸۹۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: سفید</label>
+                    <div class="product-color" style="background-color: #ffffff;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع گوشی: دو گوشی</span>
+                    <br>
+                    <span>رابط‌ها: USB Type-C، Bluetooth</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ------------------------------------ 3-4 ---------------------------------- -->
           <tr>
-            <td><img src="../images/headphone/img-headphone4.jpg" alt="هدفون بلوتوثی اکسیژن مدل E7"></td>
-            <td scope="row">هدفون بلوتوثی اکسیژن مدل E7</td>
-            <td>هدفون و هندزفری</td>            
-            <td>۵۹۹۰۰۰ تومان</td>
+            <td><img src="../images/headphone/img-headphone4.jpg" alt=""></td>
+            <td scope="row">هدفون بلوتوثی سامسونگ مدل Galaxy Buds2 Pro</td>
+            <td>۴۹۵۰۰۰۰ تومان</td>
+            <td>هدفون</td>
             <td>45</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -447,16 +1586,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon4" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/headphone/img-headphone4.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>هدفون بلوتوثی سامسونگ مدل Galaxy Buds2 Pro</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۴۹۵۰۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #151515;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع گوشی: دو گوشی</span>
+                    <br>
+                    <span>رابط‌ها: Bluetooth</span>
+                    <br>
+                    <span>قابلیت‌های مقاومتی: مقاومت در برابر رطوبت و عرق</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- --------------------------------------- 3-5 ---------------------------------------------- -->
           <tr>
-            <td><img src="../images/headphone/img-headphone5.jpg" alt="هدفون بلوتوثی مدل P39 2021"></td>
-            <td scope="row">هدفون بلوتوثی مدل P39 2021</td>
-            <td>هدفون و هندزفری</td>
-            <td>۲۴۸۰۰۰ تومان</td>
+            <td><img src="../images/headphone/img-headphone5.jpg" alt=""></td>
+            <td scope="row">هدست بلوتوثی اکسیژن مدل E7</td>
+            <td>۵۹۹۰۰۰ تومان</td>
+            <td>هدفون</td>
             <td>225</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -465,16 +1688,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon5" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon5">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/headphone/img-headphone5.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>هدست بلوتوثی اکسیژن مدل E7</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۵۹۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #181818;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع گوشی: دو گوشی</span>
+                    <br>
+                    <span>رابط‌ها: Bluetooth</span>
+                    <br>
+                    <span>قابلیت‌های مقاومتی: مقاومت در برابر رطوبت و عرق</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+        <!-- ----------------------------------------------- 4-1 ------------------------------ -->
           <tr>
-            <td><img src="../images/watch/img-watch1.jpg" alt="ساعت هوشمند شیائومی Mibro Lite"></td>
-            <td scope="row">ساعت هوشمند شیائومی Mibro Lite</td>
+            <td><img src="../images/watch/img-watch1.jpg" alt=""></td>
+            <td scope="row">ساعت هوشمند سامسونگ مدل Galaxy Watch5 44mm</td>
+            <td>۷۷۴۹۰۰۰ تومان</td>
             <td>ساعت هوشمند</td>
-            <td>۹۶۰۰۰۰ تومان</td>
             <td>35</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -483,16 +1790,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon1" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/watch/img-watch1.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>ساعت هوشمند سامسونگ مدل Galaxy Watch5 44mm</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۷۷۴۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #1c1c1b;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع کاربری: ورزشی، رسمی، روزمره</span>
+                    <br>
+                    <span>فرم صفحه: دایره</span>
+                    <br>
+                    <span>جنس بند: سیلیکون</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- -------------------------------------- 4-2 -------------------------------------- -->
           <tr>
-            <td><img src="../images/watch/img-watch2.jpg" alt="ساعت هوشمند ایمیلب مدل W01"></td>
-            <td scope="row">ساعت هوشمند ایمیلب مدل W01</td>
+            <td><img src="../images/watch/img-watch2.jpg" alt=""></td>
+            <td scope="row">ساعت هوشمند اپل مدل Series 8 Aluminum 45mm</td>
+            <td>۱۷۲۹۹۰۰۰ تومان</td>
             <td>ساعت هوشمند</td>
-            <td>۶۸۵۰۰۰ تومان</td>
             <td>25</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -501,16 +1892,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon2" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/watch/img-watch2.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>ساعت هوشمند اپل مدل Series 8 Aluminum 45mm</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۷۲۹۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: بژ</label>
+                    <div class="product-color" style="background-color: #e3d99a;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع کاربری: ورزشی، رسمی</span>
+                    <br>
+                    <span>فرم صفحه: مربع</span>
+                    <br>
+                    <span>جنس بند: سیلیکون</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- --------------------------------- 4-3 -------------------------------------- -->
           <tr>
-            <td><img src="../images/watch/img-watch3.jpg" alt="ساعت هوشمند سامسونگ مدل Galaxy Watch5 44mm"></td>
-            <td scope="row">ساعت هوشمند سامسونگ مدل Galaxy Watch5 44mm</td>
-            <td>ساعت هوشمند</td>            
-            <td>۷۷۴۰۰۰۰ تومان</td>
+            <td><img src="../images/watch/img-watch3.jpg" alt=""></td>
+            <td scope="row">ساعت هوشمند سامسونگ مدل Galaxy Watch4 40mm بند سیلیکونی</td>
+            <td>۵۲۹۹۰۰۰ تومان</td>
+            <td>ساعت هوشمند</td>
             <td>30</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -519,16 +1994,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon3" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+                    <div class="modal fade" id="view-icon3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/watch/img-watch3.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>ساعت هوشمند سامسونگ مدل Galaxy Watch4 40mm بند سیلیکونی</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۵۲۹۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #1d1d1c;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع کاربری: ورزشی، رسمی، روزمره</span>
+                    <br>
+                    <span>فرم صفحه: گرد</span>
+                    <br>
+                    <span>جنس بند: سیلیکون</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- --------------------------------- 4-4 --------------------------------------- -->
           <tr>
-            <td><img src="../images/watch/img-watch2.jpg" alt="ساعت هوشمند سامسونگ مدل Galaxy Watch5 Pro"></td>
+            <td><img src="../images/watch/img-watch4.jpg" alt=""></td>
             <td scope="row">ساعت هوشمند سامسونگ مدل Galaxy Watch5 Pro</td>
-             <td>ساعت هوشمند</td>           
-            <td>۱۲۵۷۰۰۰۰ تومان</td>
+            <td>۱۱۹۴۹۰۰۰ تومان</td>
+            <td>ساعت هوشمند</td>
             <td>15</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -537,16 +2096,100 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon4" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/watch/img-watch4.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>ساعت هوشمند سامسونگ مدل Galaxy Watch5 Pro</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۱۹۴۹۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #181817;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع کاربری: ورزشی، رسمی، روزمره</span>
+                    <br>
+                    <span>فرم صفحه: دایره</span>
+                    <br>
+                    <span>جنس بند: سیلیکون</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+          <!-- ------------------------------------- 4-5 ------------------------------ -->
           <tr>
-            <td><img src="../images/watch/img-watch5.jpg" alt="ساعت هوشمند سامسونگ مدل Galaxy Watch4 40mm بند سیلیکونی"></td>
-            <td scope="row">ساعت هوشمند سامسونگ مدل Galaxy Watch4 40mm بند سیلیکونی</td>
-            <td>ساعت هوشمند</td>           
-            <td>۵۳۹۹۰۰۰ تومان</td>
+            <td><img src="../images/watch/img-watch5.jpg" alt=""></td>
+            <td scope="row">ساعت هوشمند اپل مدل SE 2022 Aluminum Case 40mm</td>
+            <td>۱۲۱۰۰۰۰۰ تومان</td>
+            <td>ساعت هوشمند</td>
             <td>55</td>
             <td>
               <button class="btn btn-success shadow mx-3" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo">
@@ -555,11 +2198,94 @@
               <button class="btn btn-danger shadow mx-3">
                 <span class="material-icons">delete</span>
               </button>
-              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon" data-whatever="@mdo">
+              <button class="btn btn-primary shadow mx-3" data-toggle="modal" data-target="#view-icon5" data-whatever="@mdo">
                 <span class="material-icons">visibility</span>
               </button>
             </td>
           </tr>
+            <div class="modal fade" id="view-icon5">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">مشخصات محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <br>
+                    <img class="img-full" src="../images/watch/img-watch5.jpg" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <br>
+                    <span>ساعت هوشمند اپل مدل SE 2022 Aluminum Case 40mm</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <br>
+                    <span>۱۲۱۰۰۰۰۰ تومان</span>
+                  </div> 
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">رنگ: مشکی</label>
+                    <div class="product-color" style="background-color: #0c0c0c;"></div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">ویژگی‌ها</label>
+                    <br>
+                    <span>نوع کاربری: ورزشی، روزمره</span>
+                    <br>
+                    <span>فرم صفحه: مستطیل</span>
+                    <br>
+                    <span>جنس بند: سیلیکون</span>
+                  </div>                                                            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
+            <div class="modal fade" id="edit-icon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5">ویرایش محصول</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="picture" class="col-form-label">تصویر :</label>
+                    <input type="file" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">نام محصول :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="price" class="col-form-label">قیمت :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="number" class="col-form-label">تعداد موجودی :</label>
+                    <input type="number" class="form-control" id="recipient-name">
+                  </div>                                                           
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary">ثبت</button>
+              </div>
+                </div>
+                  </div>
+                    </div>
         </tbody>
       </table>
     </div>
