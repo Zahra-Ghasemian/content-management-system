@@ -170,7 +170,7 @@ $(function () {
           label: "# of Votes",
           data: [13000, 12500, 14000, 15000, 13500, 14500, 15000],
           borderWidth: 1,
-          backgroundColor: "#a1e9a1",
+          backgroundColor: "#bcbcf1",
         },
       ],
     },
@@ -215,10 +215,10 @@ $(function () {
       datasets: [
         {
           label: "# of Votes",
-          data: [15000, 8000, 16700, 15600, 12000, 15000, 14000],
+          data: [15000, 8000, 20000, 15600, 4000, 15000, 14000],
           borderWidth: 1,
           backgroundColor: "#17a2b8",
-          borderColor: "#17a2b8",
+          borderColor: "rgb(57, 35, 199)",
         },
         {
           label: "# of Votes",
