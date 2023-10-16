@@ -104,3 +104,110 @@ tr {
   width: 60px;
   height: 60px;
 }
+
+/* ////////////////////////// */
+ /* * Component: Direct Chat
+ * ---------------------- */ */
+
+.direct-chat .card-body {
+  position: relative;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.direct-chat-messages {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  padding: 10px;
+  height: 250px;
+  overflow: auto;
+}
+
+.direct-chat-msg,
+.direct-chat-text {
+  display: block;
+}
+
+.direct-chat-msg {
+  margin-bottom: 10px;
+}
+
+.direct-chat-msg::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.direct-chat-messages {
+  transition: transform .5s ease-in-out;
+}
+
+.direct-chat-text {
+  border-radius: 0.3rem;
+  position: relative;
+  padding: 5px 10px;
+  background: #d2d6de;
+  border: 1px solid #d2d6de;
+  margin: 5px 0 0 50px;
+  color: #444;
+}
+
+.direct-chat-text:after, .direct-chat-text:before {
+  position: absolute;
+  right: 100%;
+  top: 15px;
+  border: solid transparent;
+  border-right-color: #d2d6de;
+  content: ' ';
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.direct-chat-text:after {
+  border-width: 5px;
+  margin-top: -5px;
+}
+
+.direct-chat-text:before {
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.right .direct-chat-text {
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+.right .direct-chat-text:after, .right .direct-chat-text:before {
+  right: auto;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #d2d6de;
+}
+
+.direct-chat-img {
+  border-radius: 50%;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.right .direct-chat-img {
+  float: right;
+}
+
+.direct-chat-info {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+}
+
+.direct-chat-name {
+  font-weight: 600;
+}
+
+.direct-chat-timestamp {
+  color: #999;
+}

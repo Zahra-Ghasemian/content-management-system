@@ -255,4 +255,26 @@ $(function () {
     },
   });
   // ------------------------------------------ visit --------------------------------------------
+
+   const ctx6 = document.getElementById("sale");
+     new Chart(ctx6, {
+       type: "doughnut",
+       data: {
+         labels: ["آنلاین", "فیزیکی"],
+         datasets: [
+           {
+             label: "# of Votes",
+             data: [60, 40],
+             borderWidth: 1,
+           },
+         ],
+       },
+       options: {
+         scales: {
+           y: {
+             beginAtZero: true,
+           },
+         },
+       },
+     });
 });
