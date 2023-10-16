@@ -258,7 +258,7 @@ $(function () {
 
    const ctx6 = document.getElementById("sale");
      new Chart(ctx6, {
-       type: "doughnut",
+       type: "bar",
        data: {
          labels: ["آنلاین", "فیزیکی"],
          datasets: [
