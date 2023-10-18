@@ -266,6 +266,7 @@ $(function () {
              label: "# of Votes",
              data: [60, 40],
              borderWidth: 1,
+             backgroundColor: "#bcbcf1",
            },
          ],
        },
@@ -277,4 +278,5 @@ $(function () {
          },
        },
      });
+
 });
