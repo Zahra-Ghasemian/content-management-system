@@ -15,10 +15,10 @@
 
 <body>
     <!-- ---------------------- navbar start ----------------------- -->
-    <nav class="navbar sticky-top navbar-light navbar-expand-md bg-light shadow">
+    <nav class="navbar sticky-top navbar-light navbar-expand-md shadow">
       <div class="d-flex align-items-center">
-        <a href="#" class="navbar-brand"><img src="../images/logo.png" alt="" class="logo">Telesk</a>
-        <span id="icon-arrow" class="material-icons text-secondary" data-toggle="collapse" data-target="#sidebar" style="cursor: pointer;">keyboard_double_arrow_right</span>            
+        <a href="#" class="navbar-brand text-white"><img src="../images/logo.png" alt="" class="logo">Telesk</a>
+        <span id="icon-arrow" class="material-icons text-white" data-toggle="collapse" data-target="#sidebar" style="cursor: pointer;">keyboard_double_arrow_right</span>            
       </div>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#mainmenu">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse d-md-flex justify-content-between" id="mainmenu">
         <nav class="navbar-nav">
           <li class="nav-item">
-            <a href="../html/index.html" class="nav-link">
+            <a href="../html/index.html" class="nav-link text-white">
               <i class="bi bi-speedometer2 m-1"></i>داشبرد
             </a>
           </li>
@@ -35,10 +35,10 @@
         <nav class="d-none d-md-flex">
           <div class="input-search mr-10">
             <form action="#">
-              <div class="search">
+              <div class="search text-secondary">
                 <input type="text" placeholder="جستجو ...">
                   <button type="submit">
-                    <span class="material-icons">search</span>
+                    <span class="material-icons text-secondary">search</span>
                   </button>        
               </div>
             </form>
@@ -179,13 +179,13 @@
             <td></td>
             <td></td>
             <td>
-              <button class="btn shadow mx-3 h6" data-toggle="modal" data-target="#view-icon1" data-whatever="@mdo" style="background-color: rgb(76, 3, 148);;">
+              <button title="مشاهده" class="btn shadow mx-3 h6" data-toggle="modal" data-target="#view-icon1" data-whatever="@mdo" style="background-color: rgb(76, 3, 148);;">
                 <span class="material-icons text-white h5">visibility</span>
               </button>
-              <button class="btn shadow mx-3 h6" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo" style="background-color: blue;">
+              <button title="ویرایش" class="btn shadow mx-3 h6" data-toggle="modal" data-target="#edit-icon" data-whatever="@mdo" style="background-color: blue;">
                 <span class="material-icons text-white h5">edit</span>
               </button>
-              <button class="btn shadow mx-3 h6" style="background-color: red;">
+              <button title="حذف" class="btn shadow mx-3 h6" style="background-color: red;">
                 <span class="material-icons text-white h5">delete</span>
               </button>
             </td>            
@@ -260,7 +260,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                <button type="button" class="btn" style="background-color: blue;">ثبت</button>
+                <button type="button" class="btn" style="background-color: blue; color: white;">ثبت</button>
               </div>
                 </div>
                   </div>
